@@ -23,17 +23,27 @@ ul {
 /* button  */
 .button {
   padding: 10px; 
+  background-color:rgb(67, 77, 218); 
+  margin: 5px; 
   border-radius: 5px; 
   font-size: 12px; 
   text-align: center; 
-  box-shadow: 0 3px rgb(40, 65, 204);  
+  box-shadow: 0 4px rgb(40, 65, 204);  
 }
 .button:hover {
-  background-color: rgb(58, 67, 204);
-  font-weight: bold;
+  background-color: rgb(115, 121, 207);
+  transition: background-color 0.5s; 
+  font-weight: bold
 }
 
+.button:not(:hover) {
+  background-color:rgb(67, 77, 218);
+  transition: background-color 0.5s; 
+  font-weight: normal; 
+}
+
+
 .button:active {
-  box-shadow: 0 2.5px rgb(10, 20, 163); 
+  box-shadow: 0 2px rgb(10, 20, 163); 
   transform: translateY(2px); 
 }

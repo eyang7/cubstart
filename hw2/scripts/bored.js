@@ -11,6 +11,8 @@ async function fetchActivity() {
 
 // END PART 7
 
+
+
 boredButton.addEventListener("click", async () => {
   // empty card
   // get activity from API
@@ -18,6 +20,7 @@ boredButton.addEventListener("click", async () => {
   // append the text elements as children of the card
   card.replaceChildren();
   const activity = await fetchActivity();
+
   // BEGIN PART 8
   for (const[key, value] of Object.entries(activity)) {
     const detail = document.createElement("p");

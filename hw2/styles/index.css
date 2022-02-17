@@ -23,6 +23,9 @@ body {
   color: white;
   text-decoration: none;
 }
+#navbar a:hover{
+  font-weight: bold;
+}
 
 #navbar > *:first-child {
   padding-left: 20px;
