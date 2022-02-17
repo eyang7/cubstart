@@ -1,0 +1,39 @@
+#counter {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+h2, h3 {
+  text-align: center;
+}
+#count-display {
+  padding: 10px;
+}
+
+.inputs {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  padding: 0; 
+}
+
+/* button  */
+.button {
+  padding: 10px; 
+  border-radius: 5px; 
+  font-size: 12px; 
+  text-align: center; 
+  box-shadow: 0 3px rgb(40, 65, 204);  
+}
+.button:hover {
+  background-color: rgb(58, 67, 204);
+  font-weight: bold;
+}
+
+.button:active {
+  box-shadow: 0 2.5px rgb(10, 20, 163); 
+  transform: translateY(2px); 
+}

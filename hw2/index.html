@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshop Demo</title>
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="playground.html">Playground</a>
+    <a href="bored.html">Bored Button</a>
+  </div>
+  <section id="about">
+    <div class="description">
+      <h3>Project description</h3>
+      <p>
+        If you're feeling bored or just want to play around, check out the rest of this website!
+        In the playground section, there is a counter, with subtracting and adding buttons. There is 
+        also a to-do list that displays the items that you want to input into the box in order to keep
+        track of what you need to do. The bored section gives you list of activities and details about it
+        everytime you feel bored. 
+      </p>
+    </div>
+    <div class="description">
+      <h3>How I made it</h3>
+      <p>
+        The playground section comprises of a counter and to-do list. The counter works by having two buttons 
+        display a "counter", with a subtract/add button. These buttons work by having an event listener 
+        that waits until there is a click on one of these buttons. And the corresponding action ensues
+        once it receives that click, and the count-display, which is the id of the counter, updates a local variable
+        accordingly. 
+        <br> 
+        <br> 
+        The to-do list backend starts with an input text box generated in html. This is linked to a 
+        javascript component, that has an event listener for the submit button. It takes whatever is inputted 
+        into the input, and creates a local var task that is of type li, assigns it to this input 
+        and is appended to the ul as a child. 
+
+        <br> 
+        <br> 
+        The bored button utilizes an asynchronous model where there is a function that fetches data 
+        from the Bored API, in the form of a json. Then, that json object is parsed iteratively with a 
+        key, value. A paragraph called detail is created with the corresponding key, value pair
+        and appended as a child to the info card. 
+      </p>
+    </div>
+  </section>
+</body>
+
+</html>
