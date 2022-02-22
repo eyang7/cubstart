@@ -16,6 +16,15 @@ input[type="file"] {
   display: none;
 }
 
+/* button animations */
+.custom-file-upload:hover {
+  background-color: #998fe5;
+  transition: 0.7s;
+}
+
+
+/* card  */
+
 canvas {
   position: relative;
   margin-top: 30px;
@@ -25,9 +34,16 @@ canvas {
 
 .custom-file-upload {
   position: absolute;
-  top: -45px;
+  top: -40px;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+
+
+  /* test */
+  border: 1px solid #9286eb;
+  padding: .2em .4em;
+  border-radius: .2em;
+
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
@@ -37,10 +53,16 @@ canvas {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* positioning into the middle of the screen */
   position: absolute;
+  top: 15%;
+  left: 50%; 
+  transform: translate(-50%);
+
+
   background: rgba(255, 255, 255, 0.4);
-  top: 10%;
-  left: 25%;
+  border: 1px solid #9286eb; 
   height: 650px;
   width: 700px;
   border-radius: 15px;

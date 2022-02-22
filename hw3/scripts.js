@@ -78,9 +78,9 @@ const getCaption = (predictions) => {
             // See if there is an example sentence, if not then add the definition
             let add_to_caption = null; 
             if (entry.example != null) {
-                add_to_caption = entry.example; 
+                add_to_caption = entity + " example: " + entry.example; 
             } else {
-                add_to_caption = entry.definition; 
+                add_to_caption = entity + " definition: " + entry.definition; 
             }
             
             // Add an emoji if it exists to caption
